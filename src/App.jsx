@@ -1,3 +1,4 @@
+import Hero from "./Components/Hero/hero"
 import Navbar from "./Components/Navbar/navbar"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
         <div className='container mx-auto p-8'>
           <Navbar/>
+          <Hero/>
         </div>
       </div>
     </>
