@@ -1,8 +1,8 @@
 // import project1 from "../assets/projects/project-1.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1 years of hands-on experience, I have honed my skills in front-end technologies like ReactJs, as well as back-end technologies like Node.js, MySQL and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications.  My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With  years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 1 years of hands-on experience, I have honed my skills in front-end technologies like ReactJs, as well as back-end technologies like Node.js, MySQL and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 // export const EXPERIENCES = [
 //   {
@@ -29,9 +29,16 @@ export const PROJECTS = [
       "A Thirukkural CRUD operation project is made on ReactJs and MangoDb to learn about the basics of backend. In this we can add,update,delete the kural.",
     technologies: ["ReactJs", "CSS", "HTML", "MangoDB", "NodeJs"],
   },
+  {
+    title: "Automatic Railway Gates",
+    image: "",
+    description:
+      "",
+    technologies: [],
+  },
 ];
 
-export const education = [
+export const EDUCATION = [
   {
       id: 0,
       img: "https://th.bing.com/th/id/R.eadde3e4309e72bce8e204dfee79bdb9?rik=mRAEh0CzJG%2f66w&riu=http%3a%2f%2fwww.tbi-kec.org%2fimages%2flogo%2fkeclogo.jpg&ehk=zrAJYJ1%2fG8W4iBY83R7SbIxyUza93lkMR3Dsc6ikudQ%3d&risl=&pid=ImgRaw&r=0",
