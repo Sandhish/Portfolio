@@ -1,21 +1,32 @@
-import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
-import { FaFacebook } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className='mb-8 flex  items-center justify-between '>
-      <div className='flex flex-shrink-0 items-center text-4xl font-bold cursor-pointer'>JS</div>
-      <div className="m-6 flex items-center justify-center gap-5 text-3xl cursor-pointer">
-        <a href="https://www.linkedin.com/in/sandhish-j-74359b256/"><FaLinkedin /></a>
-        <a href="https://github.com/sandhish"><FaGithub /></a> 
-        <a href="https://www.instagram.com/sandhish._/"><FaInstagram /></a> 
-        <a href="https://www.facebook.com/sandhish.jaganathan"><FaFacebook /></a>
+    // fixed top-0 left-0 w-full flex items-center justify-between p-4 shadow-lg z-50
+    <div id='navbar' className='flex items-center justify-between p-4'>
+      <div className='flex flex-shrink-0 items-center text-5xl font-bold cursor-pointer mt-1'>
+        <a href="#navbar">JS</a>
+      </div>
+      <div className="lg:hidden">
+        <button onClick={toggleMenu} className="text-3xl">
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
+      <div className={`lg:flex items-center justify-center gap-6 text-xl cursor-pointer ${isOpen ? 'block' : 'hidden'} lg:block`}>
+        <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
+        <a href="#about" onClick={() => setIsOpen(false)}>About</a>
+        <a href="#skills" onClick={() => setIsOpen(false)}>Skill Sets</a>
+        <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
