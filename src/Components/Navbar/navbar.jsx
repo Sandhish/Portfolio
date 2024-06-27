@@ -14,8 +14,8 @@ const Navbar = () => {
         <a href="#navbar">JS</a>
       </div>
       <div className="lg:hidden">
-        <button onClick={toggleMenu} className="text-3xl">
-          {isOpen ? <FaTimes /> : <FaBars />}
+        <button onClick={toggleMenu} className={`text-3xl ${isOpen ? "hidden":"visible"}`}>
+          <FaBars />
         </button>
       </div>
       <div className={`lg:flex items-center justify-center gap-7 text-xl cursor-pointer ${isOpen ? 'flex flex-col absolute top-10 right-0 gap-3 shadow-lg rounded-2xl py-4 px-7 bg-neutral-900' : 'hidden'} lg:flex-row`}>
