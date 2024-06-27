@@ -27,11 +27,11 @@ const Hero = () => {
     <div id="home" className="border-b border-neutral-900">
       <div className="flex flex-wrap pb-4 mt-8">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:pl-20 lg:items-start">
+          <div className="flex flex-col items-center 2xl:pl-44 lg:pl-20 lg:items-start">
             <motion.h1 variants={container(0)} initial="hidden" animate="visible"
-              className="pb-4 lg:p-4 text-4xl font-light tracking-tight mt-12 lg:mt-48 lg:text-7xl">Hello, I'm</motion.h1>
+              className="pb-4 lg:p-4 text-4xl font-light tracking-tight 2xl:text-7xl 2xl:mt-44 mt-12 xl:text-6xl xl:mt-40 lg:mt-24 lg:text-5xl">Hello, I'm</motion.h1>
             <motion.h1 variants={container(0)} initial="hidden" animate="visible"
-              className="pb-8 lg:p-4 text-6xl font-light tracking-tight lg:text-7xl">Sandhish</motion.h1>
+              className="pb-8 lg:p-4 text-6xl font-light tracking-tight 2xl:text-7xl xl:text-6xl lg:text-6xl">Sandhish</motion.h1>
 
             <motion.div variants={container(0.5)} initial="hidden" animate="visible"
               className="lg:p-5 p-2 flex items-center justify-center gap-5 text-3xl cursor-pointer">
@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full lg:px-16 lg:p-10 h-5/6 lg:w-1/2 flex justify-center lg:justify-end">
+        <div className="w-full lg:px-16 2xl:px-32 lg:p-10 h-5/6 lg:w-1/2 flex justify-center lg:justify-end">
           <motion.img
             initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 1.2 }}
             src="https://i.imgur.com/8lH5EON.png" className="rounded-[32px] p-6" alt="Sandhish" />

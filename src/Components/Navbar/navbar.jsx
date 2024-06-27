@@ -9,7 +9,6 @@ const Navbar = () => {
   };
 
   return (
-    // fixed top-0 left-0 w-full flex items-center justify-between p-4 shadow-lg z-50
     <div id='navbar' className='flex items-center justify-between p-4'>
       <div className='flex flex-shrink-0 items-center text-5xl font-bold cursor-pointer mt-1'>
         <a href="#navbar">JS</a>
@@ -19,7 +18,10 @@ const Navbar = () => {
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-      <div className={`lg:flex items-center justify-center gap-6 text-xl cursor-pointer ${isOpen ? 'block' : 'hidden'} lg:block`}>
+      <div className={`lg:flex items-center justify-center gap-7 text-xl cursor-pointer ${isOpen ? 'flex flex-col absolute top-10 right-0 gap-3 shadow-lg rounded-2xl py-4 px-7 bg-neutral-900' : 'hidden'} lg:flex-row`}>
+        <button onClick={toggleMenu} className="text-xl absolute top-2 right-2 lg:hidden">
+          <FaTimes />
+        </button>
         <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
         <a href="#about" onClick={() => setIsOpen(false)}>About</a>
         <a href="#skills" onClick={() => setIsOpen(false)}>Skill Sets</a>
