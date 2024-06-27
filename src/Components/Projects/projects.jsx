@@ -8,7 +8,7 @@ const Projects = () => {
       <motion.h1 whileInView={{opacity:1,y:0}} initial={{opacity:0,y:-100}} transition={{duration:1.0}} className='my-12 text-center text-4xl'>Projects</motion.h1>
       <div className='flex flex-col items-center'>
         {PROJECTS.map((project, index) => (
-          <div key={index} className='mb-4 lg:w-3/4 flex flex-wrap justify-center border border-neutral-800'>
+          <div key={index} className='mb-4 lg:w-3/4 flex flex-wrap justify-center border border-neutral-800 rounded-3xl'>
             <motion.div whileInView={{opacity:1,x:0}} initial={{opacity:0,x:-100}} transition={{duration:1}} className='w-full lg:w-1/4 flex justify-center'>
               <img src={project.image} className='my-3 rounded-xl p-2' alt={project.title} style={{ height: '220px' }} />
             </motion.div>

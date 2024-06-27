@@ -4,7 +4,7 @@ import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const iconVar = (duration) => ({
   initial: { y: -10 },
