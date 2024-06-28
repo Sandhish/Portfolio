@@ -23,6 +23,11 @@ const Hero = () => {
     }
   });
 
+  const iconHover = {
+    scale: 1.2,
+    transition: { duration: 0.3 },
+  };
+
   return (
     <div id="home" className="border-b border-neutral-900">
       <div className="flex flex-wrap pb-4 mt-8">
@@ -35,11 +40,11 @@ const Hero = () => {
 
             <motion.div variants={container(0.5)} initial="hidden" animate="visible"
               className="lg:p-5 p-2 flex items-center justify-center gap-5 text-3xl cursor-pointer">
-              <a href="mailto:sandhish19@gmail.com"><SiGmail /></a>
-              <a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/sandhish-j-74359b256/"><FaLinkedin /></a>
-              <a target='_blank' rel="noopener noreferrer" href="https://github.com/sandhish"><FaGithub /></a>
-              <a target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/sandhish._/"><FaInstagram /></a>
-              <a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/sandhish.jaganathan"><FaFacebook /></a>
+              <motion.a href="mailto:sandhish19@gmail.com" whileHover={iconHover}><SiGmail /></motion.a>
+              <motion.a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/sandhish-j-74359b256/" whileHover={iconHover}><FaLinkedin /></motion.a>
+              <motion.a target='_blank' rel="noopener noreferrer" href="https://github.com/sandhish" whileHover={iconHover}><FaGithub /></motion.a>
+              <motion.a target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/sandhish._/" whileHover={iconHover}><FaInstagram /></motion.a>
+              <motion.a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/sandhish.jaganathan" whileHover={iconHover}><FaFacebook /></motion.a>
             </motion.div>
 
             <motion.div variants={container(1)} initial="hidden" animate="visible" className="lg:px-5 py-4 flex justify-center items-center">
