@@ -10,19 +10,19 @@ const Navbar = () => {
   };
 
   const menuVariants = {
-    hidden: {
-      opacity: 0,
-      y: -20,
-    },
+    hidden: { opacity: 0, y: -20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
-        stiffness: 200,
-        damping: 15,
+        type: 'spring', stiffness: 200, damping: 15,
       },
     },
+  };
+
+  const textHover = {
+    scale: 1.1,
+    transition: { duration: 0.3 },
   };
 
   return (
@@ -42,18 +42,20 @@ const Navbar = () => {
             <button onClick={toggleMenu} className="text-xl absolute top-2 right-2 lg:hidden">
               <FaTimes />
             </button>
-            <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="#about" onClick={() => setIsOpen(false)}>About</a>
-            <a href="#skills" onClick={() => setIsOpen(false)}>Skill Sets</a>
-            <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
+            <motion.a href="#home" whileHover={textHover} onClick={() => setIsOpen(false)}>Home</motion.a>
+            <motion.a href="#about" whileHover={textHover} onClick={() => setIsOpen(false)}>About</motion.a>
+            <motion.a href="#skills" whileHover={textHover} onClick={() => setIsOpen(false)}>Skills</motion.a>
+            <motion.a href="#projects" whileHover={textHover} onClick={() => setIsOpen(false)}>Projects</motion.a>
+            <motion.a href="#achievements" whileHover={textHover} onClick={() => setIsOpen(false)}>Achievements</motion.a>
           </motion.div>
         )}
       </AnimatePresence>
       <div className='hidden lg:flex items-center justify-center gap-9 text-xl cursor-pointer'>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skill Sets</a>
-        <a href="#projects">Projects</a>
+        <motion.a href="#home" whileHover={textHover}>Home</motion.a>
+        <motion.a href="#about" whileHover={textHover}>About</motion.a>
+        <motion.a href="#skills" whileHover={textHover}>Skills</motion.a>
+        <motion.a href="#projects" whileHover={textHover}>Projects</motion.a>
+        <motion.a href="#achievements" whileHover={textHover}>Achievements</motion.a>
       </div>
     </div>
   );

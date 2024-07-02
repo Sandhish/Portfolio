@@ -1,4 +1,5 @@
 import About from "./Components/About/about"
+import Achievements from "./Components/Achievements/achievements"
 import Education from "./Components/Education/education"
 import Hero from "./Components/Hero/hero"
 import Navbar from "./Components/Navbar/navbar"
@@ -21,6 +22,7 @@ function App() {
           <Education/>
           <Skills />
           <Projects />
+          {/* <Achievements/> */}
         </div>
       </div>
     </>

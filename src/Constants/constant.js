@@ -33,33 +33,6 @@ export const PROJECTS = [
   },
 ];
 
-export const EDUCATION = [
-  {
-    id: 0,
-    img: "https://th.bing.com/th/id/R.eadde3e4309e72bce8e204dfee79bdb9?rik=mRAEh0CzJG%2f66w&riu=http%3a%2f%2fwww.tbi-kec.org%2fimages%2flogo%2fkeclogo.jpg&ehk=zrAJYJ1%2fG8W4iBY83R7SbIxyUza93lkMR3Dsc6ikudQ%3d&risl=&pid=ImgRaw&r=0",
-    school: "Kongu Engineering College, Perundurai",
-    grade: "8.69 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kongu Engineering College, Perundurai. I have completed 4 semesters and have a CGPA of 8.69. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, among others.",
-    degree: "Bachelor of Engineering - B.E, Computer Science and Engineering",
-  },
-  {
-    id: 1,
-    img: "https://th.bing.com/th/id/OIP.0X5D-5UDniXaFPtexFPB9QAAAA?rs=1&pid=ImgDetMain",
-    school: "Kongu Vellalar Matric Higher Secondary School, Chennimalai",
-    grade: "92.7%",
-    desc: "I completed my class 12 high school education at Kongu Vellalar Matric Higher Secondary School, Chennimalai, where I studied Maths with Computer Science.",
-    degree: "HSC(XII), Maths with Computer",
-  },
-  {
-    id: 2,
-    img: "https://th.bing.com/th/id/OIP.0X5D-5UDniXaFPtexFPB9QAAAA?rs=1&pid=ImgDetMain",
-    school: "Kongu Vellalar Matric Higher Secondary School, Chennimalai",
-    grade: "97.2%",
-    desc: "I completed my class 10 education at Kongu Vellalar Matric Higher Secondary School, Chennimalai.",
-    degree: "SSLC(X)",
-  },
-];
-
 // export const EXPERIENCES = [
 //   {
 //     year: "",
@@ -69,8 +42,3 @@ export const EDUCATION = [
 //     technologies: [""],
 //   },
 // ];
-
-
-export const CONTACT = {
-
-};
