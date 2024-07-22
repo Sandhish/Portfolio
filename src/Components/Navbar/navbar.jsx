@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         {isOpen && (
           <motion.div initial="hidden" animate="visible" exit="hidden" variants={menuVariants}
             className={`lg:flex items-center justify-center gap-2.5 text-xl cursor-pointer flex flex-col absolute top-10 right-0 shadow-lg rounded-2xl py-4 px-7 bg-neutral-900 lg:flex-row`}>
-            <button onClick={toggleMenu} className="text-xl absolute top-2 right-2 lg:hidden">
+            <button onClick={toggleMenu} className="text-xl absolute top-2 right-2 lg:hidden hover:text-white">
               <FaTimes />
             </button>
             <motion.a href="#home" whileHover={textHover} onClick={() => setIsOpen(false)}>Home</motion.a>

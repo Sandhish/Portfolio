@@ -32,7 +32,7 @@ const Hero = () => {
     <div id="home" className="border-b border-neutral-900">
       <div className="flex flex-wrap pb-4 mt-8">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center 2xl:pl-44 lg:pl-20 lg:items-start">
+          <div className="flex flex-col items-center 2xl:pl-44 lg:pl-24 lg:items-start">
             <motion.h1 variants={container(0)} initial="hidden" animate="visible"
               className="pb-4 lg:p-4 text-4xl font-light tracking-tight 2xl:text-7xl 2xl:mt-44 mt-12 xl:text-6xl xl:mt-40 lg:mt-24 lg:text-5xl">Hello, I'm</motion.h1>
             <motion.h1 variants={container(0)} initial="hidden" animate="visible"
@@ -58,7 +58,7 @@ const Hero = () => {
 
             <motion.a href="https://drive.google.com/file/d/19NplZ9O4kq6pmqkL3VdgVJHcHTzbZj25/view?usp=drive_link" download="Sandhish_Resume.pdf"
               variants={container(1.5)} initial="hidden" animate="visible" whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-              className="mt-2 lg:ml-3 flex gap-2 bg-zinc-950 rounded-3xl text-lg px-5 py-1.5 text-center me-2 mb-2 border border-white text-gray-300">
+              className="mt-2 lg:ml-4 flex gap-2 bg-zinc-950 rounded-3xl text-lg px-5 py-1.5 text-center me-2 mb-2 border border-white text-gray-300">
               Resume
               <svg height="28" width="20" viewBox="0 0 640 512">
                 <path
