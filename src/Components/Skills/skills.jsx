@@ -18,7 +18,17 @@ const iconVar = (duration) => ({
       repeatType: "reverse",
     }
   }
-})
+});
+
+const skillsData = [
+  { icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-500" />, tooltip: 'ReactJs' },
+  { icon: <FaHtml5 className="text-4xl lg:text-6xl text-red-600" />, tooltip: 'HTML5' },
+  { icon: <SiMongodb className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'MongoDB' },
+  { icon: <RiTailwindCssFill className="text-4xl lg:text-6xl text-cyan-300" />, tooltip: 'Tailwind CSS' },
+  { icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'NodeJs' },
+  { icon: <GrMysql className="text-4xl lg:text-6xl text-sky-800" />, tooltip: 'MySQL' },
+  { icon: <RxFigmaLogo className="text-4xl lg:text-6xl" />, tooltip: 'Figma' },
+];
 
 const Skills = () => {
   return (
@@ -26,38 +36,18 @@ const Skills = () => {
       <motion.h1 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1.0 }} className='my-12 text-center text-4xl'>Skills</motion.h1>
       <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1.5 }} className='flex flex-wrap items-center justify-center gap-4'>
 
-        <motion.div variants={iconVar(2.5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-500" />
-        </motion.div>
-
-        <motion.div variants={iconVar(3)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <FaHtml5 className="text-4xl lg:text-6xl text-red-600" />
-        </motion.div>
-
-        <motion.div variants={iconVar(4)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <SiMongodb className="text-4xl lg:text-6xl text-green-500" />
-        </motion.div>
-
-        <motion.div variants={iconVar(5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiTailwindCssFill className="text-4xl lg:text-6xl text-cyan-300" />
-        </motion.div>
-
-        <motion.div variants={iconVar(3)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <FaNodeJs className="text-4xl lg:text-6xl text-green-500" />
-        </motion.div>
-
-        <motion.div variants={iconVar(4)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <GrMysql className="text-4xl lg:text-6xl text-sky-800" />
-        </motion.div>
-
-        <motion.div variants={iconVar(2.5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RxFigmaLogo className="text-4xl lg:text-6xl" />
-        </motion.div>
+        {skillsData.map((skill, index) => (
+          <motion.div key={index} variants={iconVar(2.5 + index * 0.5)} initial="initial" animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
+            {skill.icon}
+            <div className="absolute left-1/2 bottom-full mb-2 hidden w-max -translate-x-1/2 transform px-2 py-1 text-sm bg-black rounded-md opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-300">
+              {skill.tooltip}
+            </div>
+          </motion.div>
+        ))}
 
       </motion.div>
-
     </div>
   )
 }
 
-export default Skills
+export default Skills;
