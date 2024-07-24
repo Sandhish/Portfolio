@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
 const RadialProgressBar = ({ percentage, isMobile }) => {
-    const radius = isMobile ? 23 : 30;
+    const radius = isMobile ? 23 : 31;
     const stroke = 4;
     const normalizedRadius = radius - stroke;
     const circumference = normalizedRadius * 2 * Math.PI;
-    const strokeDashoffset = circumference - (percentage / 100) * circumference;
+    const strokeDashoffset = circumference - (percentage / 102) * circumference;
 
     return (
         <svg height={radius * 2} width={radius * 2} className="relative">
@@ -16,7 +16,7 @@ const RadialProgressBar = ({ percentage, isMobile }) => {
                 style={{ strokeDashoffset }} strokeLinecap="round" r={normalizedRadius} 
                 cx={radius} cy={radius} initial={{ strokeDashoffset: circumference }}
                 animate={{ strokeDashoffset }} transition={{ duration: 1 }} />
-            <text x="50%" y="50%" textAnchor="middle" dy=".3em" fontSize={isMobile ? "9" : "10"} fill="#fff">
+            <text x="50%" y="50%" textAnchor="middle" dy=".3em" fontSize={isMobile ? "9" : "12"} fill="#fff">
                 {percentage}%
             </text>
         </svg>
@@ -66,7 +66,7 @@ const Education = () => {
                             <div className="ms-4">
                                 <h3 className="text-lg mb-1 font-semibold dark:text-white">B.E CSE</h3>
                                 <time className="block mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">(2022 - Till date)</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Kongu Engineering College, Perundurai</p>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Kongu Engineering College</p>
                             </div>
                         </div>
                     </motion.li>

@@ -26,7 +26,8 @@ const Achievements = () => {
                 Achievements
             </motion.h1>
 
-            <div className='relative lg:w-2/4 w-3/4 h-72'>
+            <h2>Cooked soon....</h2>
+            {/* <div className='relative lg:w-2/4 w-3/4 h-72'>
                 <AnimatePresence>
                     {cards.map((card, index) => (
                         <motion.div
@@ -42,7 +43,7 @@ const Achievements = () => {
                         </motion.div>
                     ))}
                 </AnimatePresence>
-            </div>
+            </div> */}
         </div>
     );
 };
