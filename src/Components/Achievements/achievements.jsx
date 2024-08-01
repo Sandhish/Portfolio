@@ -33,7 +33,7 @@ const Achievements = () => {
                     {cards.map((card, index) => (
                         <motion.div
                             key={card.id}
-                            className='absolute w-full h-60 cursor-pointer rounded-3xl p-4 shadow-xl bg-neutral-900 border border-gray-300 flex flex-col justify-between'
+                            className='absolute w-full lg:h-60 md:h-72 h-96 cursor-pointer rounded-3xl p-4 shadow-xl bg-neutral-900 border border-gray-300 flex flex-col justify-between'
                             style={{
                                 zIndex: cards.length - index,
                                 top: `${-index * 12}px`,
@@ -45,7 +45,7 @@ const Achievements = () => {
                             transition={{ duration: 0.7 }}>
 
                             <div className="relative font-normal">
-                                <div className="absolute top-[5px] right-4 text-sm text-gray-400">{card.date}</div>
+                                <div className="absolute top-[5px] right-4 text-sm text-gray-400 hidden lg:block">{card.date}</div>
                                 <h2 className='text-xl font-bold'>{card.title}</h2>
                                 <p className='mt-4 text-gray-400'>{card.description}</p>
                             </div>
