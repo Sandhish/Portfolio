@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div id='navbar' className='flex items-center justify-between p-4'>
+    <div id='navbar' className='flex items-center justify-between pt-4 px-4'>
       <div className='flex flex-shrink-0 items-center text-5xl font-bold cursor-pointer mt-1'>
         <a href="#navbar">JS</a>
       </div>

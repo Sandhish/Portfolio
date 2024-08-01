@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { TiHome } from "react-icons/ti";
 import { SiGmail } from "react-icons/si";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Hero = () => {
-  const texts = ["Full Stack Developer", "Programmer", "Enthusiastic", "Quick Learner"];
+  const texts = ["Full Stack Developer", "Enthusiastic", "Quick Learner", "Programmer"];
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
@@ -12,7 +14,7 @@ const Hero = () => {
       setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  });
 
   const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -30,7 +32,7 @@ const Hero = () => {
 
   return (
     <div id="home" className="border-b border-neutral-900">
-      <div className="flex flex-wrap pb-4 mt-8">
+      <div className="flex flex-wrap pb-3 mt-8">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center 2xl:pl-44 lg:pl-24 lg:items-start">
             <motion.h1 variants={container(0)} initial="hidden" animate="visible"
@@ -47,7 +49,7 @@ const Hero = () => {
               <motion.a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/sandhish.jaganathan" whileHover={iconHover}><FaFacebook /></motion.a>
             </motion.div>
 
-            <motion.div variants={container(1)} initial="hidden" animate="visible" className="lg:px-5 py-4 flex justify-center items-center">
+            <motion.div variants={container(1)} initial="hidden" animate="visible" className="lg:px-5 py-3 flex justify-center items-center">
               <AnimatePresence mode='wait'>
                 <motion.span key={textIndex} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }}
                   className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-wide text-transparent">
@@ -76,6 +78,12 @@ const Hero = () => {
             src="https://i.imgur.com/8lH5EON.png" className="rounded-[32px] p-6" alt="Sandhish" />
         </div>
       </div>
+
+      <Link to="navbar" smooth={true} duration={1300}>
+        <button className="fixed bottom-4 right-4 z-50 bg-neutral-700 hover:bg-neutral-900 text-white font-bold rounded-full shadow-lg transition duration-300 ease-in-out flex items-center justify-center w-12 h-12">
+          <TiHome className="text-2xl"/>
+        </button>
+      </Link>
     </div>
   );
 }

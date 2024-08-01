@@ -14,7 +14,7 @@ export const PROJECTS = [
     demo: "https://www.linkedin.com/posts/sandhish-j-74359b256_nlp-languagetranslation-huggingface-activity-7193895342533152768-CBqh?utm_source=share&utm_medium=member_desktop"
   },
   {
-    title: "Thirukkural To Do List",
+    title: "Thirukkural List",
     image: "https://www.educative.io/v2api/editorpage/6598730818519040/image/6322773582938112",
     description:
       "Developed a Thirukkural CRUD application utilizing the MERN stack, providing users with personalized registration and login functionality to manage their tasks. Users can create, read, update, and delete their to-do lists alongside exploring the complete collection of Thirukkural verses.",
@@ -30,6 +30,15 @@ export const PROJECTS = [
     technologies: [],
     github:"https://drive.google.com/file/d/1Eb1jmC1_Fa51BZIXcoyEz0z_KhFFhPae/view?usp=drive_link",
     demo:"https://drive.google.com/file/d/1Eb1jmC1_Fa51BZIXcoyEz0z_KhFFhPae/view?usp=drive_link",
+  },
+  {
+    title: "Page Replacement Algorithms",
+    image: "https://i.imgur.com/UqvihDQ.png",
+    description:
+      "Developed an interactive web tool using HTML, CSS, and JavaScript to demonstrate FIFO, LRU, and Optimal replacement algorithms. This project visualizes and compares algorithm performance, enhancing understanding through real-time simulations and interactive learning.",
+    technologies: ["HTML","CSS","JS"],
+    github:"https://github.com/Sandhish/Page-Replacement-Algorithms",
+    demo:"https://page-replacement-algorithms-3.vercel.app/",
   },
 ];
 
