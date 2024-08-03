@@ -38,7 +38,7 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div initial="hidden" animate="visible" exit="hidden" variants={menuVariants}
-            className={`lg:flex items-center justify-center gap-2.5 text-xl cursor-pointer flex flex-col absolute top-10 right-0 shadow-lg rounded-2xl py-4 px-7 bg-neutral-900 lg:flex-row`}>
+            className={`lg:flex items-center justify-center gap-2.5 text-xl cursor-pointer flex flex-col absolute top-6 right-0 shadow-lg rounded-2xl py-4 px-7 bg-neutral-900 lg:flex-row`}>
             <button onClick={toggleMenu} className="text-xl absolute top-2 right-2 lg:hidden hover:text-white">
               <FaTimes />
             </button>

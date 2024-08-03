@@ -23,17 +23,17 @@ const Achievements = () => {
     };
 
     return (
-        <div id='achievements' className='relative flex flex-col items-center justify-center'>
+        <div id='achievements' className='border-b border-neutral-900 lg:pb-4 md:pb-10 pb-20 relative flex flex-col items-center justify-center'>
             <motion.h1 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1.0 }} className='mb-[95px] mt-12 text-center text-4xl'>
                 Achievements
             </motion.h1>
 
-            <div className='relative lg:w-2/4 w-3/4 h-[280px]'>
+            <div className='relative lg:w-2/4 lg:ml-0 -ml-8 w-5/6 h-[280px]'>
                 <AnimatePresence>
                     {cards.map((card, index) => (
                         <motion.div
                             key={card.id}
-                            className='absolute w-full lg:h-60 md:h-72 h-96 cursor-pointer rounded-3xl p-4 shadow-xl bg-neutral-900 border border-gray-300 flex flex-col justify-between'
+                            className='absolute w-full lg:h-60 md:h-72 h-[330px] cursor-pointer rounded-3xl p-4 shadow-xl bg-neutral-900 border border-gray-300 flex flex-col justify-between'
                             style={{
                                 zIndex: cards.length - index,
                                 top: `${-index * 12}px`,

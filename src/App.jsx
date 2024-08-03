@@ -1,6 +1,7 @@
 import About from "./Components/About/about"
 import Achievements from "./Components/Achievements/achievements"
 import Education from "./Components/Education/education"
+import Footer from "./Components/Footer/footer"
 import Hero from "./Components/Hero/hero"
 import Navbar from "./Components/Navbar/navbar"
 import Projects from "./Components/Projects/projects"
@@ -23,6 +24,7 @@ function App() {
           <Skills />
           <Projects />
           <Achievements />
+          <Footer />
         </div>
       </div>
     </>
