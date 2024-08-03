@@ -17,12 +17,12 @@ const Footer = () => {
                 </motion.form>
 
                 <motion.a initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}
-                    href="https://wa.me/9500896146" target="_blank" rel="noopener noreferrer">
+                    href="https://wa.me/919500896146" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp className="text-2xl ml-2 mt-1 text-green-500" />
                 </motion.a>
 
             </motion.div>
-            
+
             <div className="text-center text-gray-500 pt-4">
                 Copyright &copy; 2024 | All rights reserved | 💙 by Sandhish
             </div>
