@@ -42,7 +42,7 @@ const Education = () => {
                             <div className="ms-4">
                                 <h3 className="text-lg mb-1 font-semibold dark:text-white">SSLC</h3>
                                 <time className="block mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">(2019 - 2020)</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">K.V.M.Hr.Sec.School, Chennimalai</p>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">K.V.M.Hr.Sec.School</p>
                             </div>
                         </div>
                     </motion.li>
@@ -54,7 +54,7 @@ const Education = () => {
                             <div className="ms-4">
                                 <h3 className="text-lg mb-1 font-semibold dark:text-white">HSC</h3>
                                 <time className="block mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">(2020 - 2022)</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">K.V.M.Hr.Sec.School, Chennimalai</p>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">K.V.M.Hr.Sec.School</p>
                             </div>
                         </div>
                     </motion.li>
