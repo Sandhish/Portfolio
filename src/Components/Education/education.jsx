@@ -33,7 +33,7 @@ const Education = () => {
             </motion.h1>
 
             <div className="flex justify-center">
-                <ol className="relative border-0 lg:flex lg:justify-between lg:w-full lg:border-0">
+                <ol className="relative border-0 lg:flex lg:justify-between lg:w-full lg:border-0 xl:px-16">
 
                     <motion.li whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -70 }} transition={{ duration: 0.7, delay: 0.2 }}
                         className="mb-10 ms-7 lg:mb-0 lg:flex lg:items-center lg:flex-col lg:relative lg:ms-0 lg:px-8">
