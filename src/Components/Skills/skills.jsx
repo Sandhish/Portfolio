@@ -21,13 +21,13 @@ const iconVar = (duration) => ({
 });
 
 const skillsData = [
-  { icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-500" />, tooltip: 'ReactJs' },
-  { icon: <FaHtml5 className="text-4xl lg:text-6xl text-red-600" />, tooltip: 'HTML5' },
-  { icon: <SiMongodb className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'MongoDB' },
-  { icon: <RiTailwindCssFill className="text-4xl lg:text-6xl text-cyan-300" />, tooltip: 'Tailwind CSS' },
-  { icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'NodeJs' },
-  { icon: <GrMysql className="text-4xl lg:text-6xl text-sky-800" />, tooltip: 'MySQL' },
-  { icon: <RxFigmaLogo className="text-4xl lg:text-6xl" />, tooltip: 'Figma' },
+  { icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-500" />, tooltip: 'ReactJs', percentage: '40%' },
+  { icon: <FaHtml5 className="text-4xl lg:text-6xl text-red-600" />, tooltip: 'HTML5' , percentage: '70%'},
+  { icon: <SiMongodb className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'MongoDB' , percentage: '50%'},
+  { icon: <RiTailwindCssFill className="text-4xl lg:text-6xl text-cyan-300" />, tooltip: 'Tailwind CSS' , percentage: '40%'},
+  { icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'NodeJs' , percentage: '50%'},
+  { icon: <GrMysql className="text-4xl lg:text-6xl text-sky-800" />, tooltip: 'MySQL' , percentage: '50%'},
+  { icon: <RxFigmaLogo className="text-4xl lg:text-6xl" />, tooltip: 'Figma' , percentage: '45%'},
 ];
 
 const Skills = () => {
@@ -40,7 +40,10 @@ const Skills = () => {
           <motion.div key={index} variants={iconVar(2.5 + index * 0.5)} initial="initial" animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
             {skill.icon}
             <div className="absolute left-1/2 bottom-full mb-2 hidden w-max -translate-x-1/2 transform px-2 py-1 text-sm bg-black rounded-md opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-300">
-              {skill.tooltip}
+              {skill.tooltip}<br />
+              <div className="text-center">
+                {skill.percentage}
+              </div>
             </div>
           </motion.div>
         ))}
