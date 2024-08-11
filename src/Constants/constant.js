@@ -14,13 +14,13 @@ export const PROJECTS = [
     demo: "https://www.linkedin.com/posts/sandhish-j-74359b256_nlp-languagetranslation-huggingface-activity-7193895342533152768-CBqh?utm_source=share&utm_medium=member_desktop"
   },
   {
-    title: "Thirukkural List",
-    image: "https://www.educative.io/v2api/editorpage/6598730818519040/image/6322773582938112",
+    title: "Kural Agaram",
+    image: "https://i.imgur.com/uBPG51W.jpg",
     description:
       "Developed a Thirukkural CRUD application utilizing the MERN stack, providing users with personalized registration and login functionality to manage their tasks. Users can create, read, update, and delete their to-do lists alongside exploring the complete collection of Thirukkural verses.",
     technologies: ["ReactJs", "MongoDB", "NodeJs", "CSS"],
-    github: "https://github.com/Sandhish/Thirukkural-Crud",
-    demo: "https://thirukkural-crud.netlify.app/"
+    github: "https://github.com/Sandhish/Kural-Agaram",
+    demo: "https://kuralagaram.netlify.app/"
   },
   {
     title: "Automatic Railway Gates",
