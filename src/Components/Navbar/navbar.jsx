@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,23 +43,43 @@ const Navbar = () => {
             <button onClick={toggleMenu} className="text-xl absolute top-2 right-2 lg:hidden hover:text-white">
               <FaTimes />
             </button>
-            <motion.a href="#home" whileHover={textHover} onClick={() => setIsOpen(false)}>Home</motion.a>
-            <motion.a href="#about" whileHover={textHover} onClick={() => setIsOpen(false)}>About</motion.a>
-            <motion.a href="#skills" whileHover={textHover} onClick={() => setIsOpen(false)}>Skills</motion.a>
-            <motion.a href="#projects" whileHover={textHover} onClick={() => setIsOpen(false)}>Projects</motion.a>
-            <motion.a href="#achievements" whileHover={textHover} onClick={() => setIsOpen(false)}>Achievements</motion.a>
+            <motion.div whileHover={textHover} onClick={() => setIsOpen(false)}>
+              <Link to="home" smooth={true} duration={900}>Home</Link>
+            </motion.div>
+            <motion.div whileHover={textHover} onClick={() => setIsOpen(false)}>
+              <Link to="about" smooth={true} duration={900}>About</Link>
+            </motion.div>
+            <motion.div whileHover={textHover} onClick={() => setIsOpen(false)}>
+              <Link to="skills" smooth={true} duration={1000}>Skills</Link>
+            </motion.div>
+            <motion.div whileHover={textHover} onClick={() => setIsOpen(false)}>
+              <Link to="projects" smooth={true} duration={1050}>Projects</Link>
+            </motion.div>
+            <motion.div whileHover={textHover} onClick={() => setIsOpen(false)}>
+              <Link to="achievements" smooth={true} duration={1100}>Achievements</Link>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
       <div className='hidden lg:flex items-center justify-center gap-9 text-xl cursor-pointer'>
-        <motion.a href="#home" whileHover={textHover}>Home</motion.a>
-        <motion.a href="#about" whileHover={textHover}>About</motion.a>
-        <motion.a href="#skills" whileHover={textHover}>Skills</motion.a>
-        <motion.a href="#projects" whileHover={textHover}>Projects</motion.a>
-        <motion.a href="#achievements" whileHover={textHover}>Achievements</motion.a>
+        <motion.div whileHover={textHover}>
+          <Link to="home" smooth={true} duration={900}>Home</Link>
+        </motion.div>
+        <motion.div whileHover={textHover}>
+          <Link to="about" smooth={true} duration={900}>About</Link>
+        </motion.div>
+        <motion.div whileHover={textHover}>
+          <Link to="skills" smooth={true} duration={1000}>Skills</Link>
+        </motion.div>
+        <motion.div whileHover={textHover}>
+          <Link to="projects" smooth={true} duration={1050}>Projects</Link>
+        </motion.div>
+        <motion.div whileHover={textHover}>
+          <Link to="achievements" smooth={true} duration={1100}>Achievements</Link>
+        </motion.div>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

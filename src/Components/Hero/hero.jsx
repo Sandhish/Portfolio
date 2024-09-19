@@ -43,7 +43,7 @@ const Hero = () => {
             <motion.div variants={container(0.5)} initial="hidden" animate="visible"
               className="lg:p-5 p-2 flex items-center justify-center gap-5 text-3xl cursor-pointer">
               <motion.a href="mailto:sandhish19@gmail.com" whileHover={iconHover}><SiGmail /></motion.a>
-              <motion.a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/sandhish-j-74359b256/" whileHover={iconHover}><FaLinkedin /></motion.a>
+              <motion.a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/sandhish/" whileHover={iconHover}><FaLinkedin /></motion.a>
               <motion.a target='_blank' rel="noopener noreferrer" href="https://github.com/sandhish" whileHover={iconHover}><FaGithub /></motion.a>
               <motion.a target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/sandhish._/" whileHover={iconHover}><FaInstagram /></motion.a>
               <motion.a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/sandhish.jaganathan" whileHover={iconHover}><FaFacebook /></motion.a>
