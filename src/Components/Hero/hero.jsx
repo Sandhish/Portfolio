@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { TiHome } from "react-icons/ti";
-import { SiGmail } from "react-icons/si";
+import { SiGmail, SiLeetcode } from "react-icons/si";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
 
@@ -45,6 +45,7 @@ const Hero = () => {
               <motion.a href="mailto:sandhish19@gmail.com" whileHover={iconHover}><SiGmail /></motion.a>
               <motion.a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/sandhish/" whileHover={iconHover}><FaLinkedin /></motion.a>
               <motion.a target='_blank' rel="noopener noreferrer" href="https://github.com/sandhish" whileHover={iconHover}><FaGithub /></motion.a>
+              <motion.a target='_blank' rel="noopener noreferrer" href="https://leetcode.com/u/Sandhish/" whileHover={iconHover}><SiLeetcode /></motion.a>
               <motion.a target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/sandhish._/" whileHover={iconHover}><FaInstagram /></motion.a>
               <motion.a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/sandhish.jaganathan" whileHover={iconHover}><FaFacebook /></motion.a>
             </motion.div>
@@ -81,7 +82,7 @@ const Hero = () => {
 
       <Link to="navbar" smooth={true} duration={1300}>
         <button className="fixed bottom-4 right-4 z-50 bg-neutral-700 hover:bg-neutral-900 text-white font-bold rounded-full shadow-lg transition duration-300 ease-in-out flex items-center justify-center w-12 h-12">
-          <TiHome className="text-2xl"/>
+          <TiHome className="text-2xl" />
         </button>
       </Link>
     </div>

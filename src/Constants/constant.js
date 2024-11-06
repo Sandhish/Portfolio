@@ -20,7 +20,25 @@ export const PROJECTS = [
       "Developed a Thirukkural CRUD application utilizing the MERN stack, providing users with personalized registration and login functionality to manage their tasks. Users can create, read, update, and delete their to-do lists alongside exploring the complete collection of Thirukkural verses.",
     technologies: ["ReactJs", "MongoDB", "NodeJs", "CSS"],
     github: "https://github.com/Sandhish/Kural-Agaram",
-    demo: "https://kuralagaram.netlify.app/"
+    demo: "https://kural-agaram.netlify.app/"
+  },
+  {
+    title: "Weather API",
+    image: "https://i.imgur.com/zeQwVHC.png",
+    description:
+      "Developed a weather app providing location-based forecasts without requiring login. Users can optionally log in through Firebase to save favorite locations and receive alerts. Alerts are sent directly via email, managed by Nodemailer. This project showcases seamless integration of user authentication, email notifications, and real-time weather data.",
+    technologies: ["ReactJs", "FireBase", "NodeJs", "WeatherAPI"],
+    github: "https://github.com/Sandhish/Weather-API",
+    demo: "https://breezecheck.vercel.app/"
+  },
+  {
+    title: "TCP Group Chat",
+    image: "https://i.imgur.com/PARfDKc.jpeg",
+    description:
+      "Developed a real-time TCP group chat application using HTML, CSS, JavaScript, and Socket.IO. Supports multi-user chat with live updates in a shared room. Demonstrates client-server communication and efficient data transfer in real time.",
+    technologies: ["SocketIo", "TCP-Socket", "HTML", "CSS","JS"],
+    github: "https://github.com/Sandhish/TCP_Group_Chat",
+    demo: "https://tcp-group-chat-qof6.onrender.com/"
   },
   {
     title: "Automatic Railway Gates",

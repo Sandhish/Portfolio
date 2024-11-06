@@ -15,7 +15,7 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <div key={index} className='mb-4 lg:w-3/4 flex flex-wrap justify-center border border-neutral-800 rounded-3xl'>
             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1 }} className='w-full lg:w-1/4 flex justify-center'>
-              <img src={project.image} className='my-3 rounded-xl p-2' alt={project.title} style={{ height: '220px' }} />
+              <img src={project.image} className='my-3 rounded-2xl p-2' alt={project.title} style={{ height: '220px' }} />
             </motion.div>
 
             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 100 }} transition={{ duration: 1 }} className="w-full max-w-xl lg:w-full p-5">

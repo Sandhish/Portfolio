@@ -6,6 +6,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { RxFigmaLogo } from "react-icons/rx";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa6";
 
 const iconVar = (duration) => ({
   initial: { y: -10 },
@@ -21,13 +22,14 @@ const iconVar = (duration) => ({
 });
 
 const skillsData = [
-  { icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-500" />, tooltip: 'ReactJs', percentage: '40%' },
-  { icon: <FaHtml5 className="text-4xl lg:text-6xl text-red-600" />, tooltip: 'HTML5' , percentage: '70%'},
+  { icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-500" />, tooltip: 'ReactJs', percentage: '50%' },
+  { icon: <FaHtml5 className="text-4xl lg:text-6xl text-red-600" />, tooltip: 'HTML5' , percentage: '80%'},
   { icon: <SiMongodb className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'MongoDB' , percentage: '50%'},
   { icon: <RiTailwindCssFill className="text-4xl lg:text-6xl text-cyan-300" />, tooltip: 'Tailwind CSS' , percentage: '40%'},
-  { icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'NodeJs' , percentage: '50%'},
-  { icon: <GrMysql className="text-4xl lg:text-6xl text-sky-800" />, tooltip: 'MySQL' , percentage: '50%'},
+  { icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-500" />, tooltip: 'NodeJs' , percentage: '40%'},
+  { icon: <GrMysql className="text-4xl lg:text-6xl text-sky-800" />, tooltip: 'MySQL' , percentage: '40%'},
   { icon: <RxFigmaLogo className="text-4xl lg:text-6xl" />, tooltip: 'Figma' , percentage: '45%'},
+  { icon: <FaGithub className="text-4xl lg:text-6xl text-white" />, tooltip: 'Github' , percentage: '60%'},
 ];
 
 const Skills = () => {
