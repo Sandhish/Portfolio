@@ -23,6 +23,15 @@ export const PROJECTS = [
     demo: "https://kural-agaram.netlify.app/"
   },
   {
+    title: "Vocal Vista",
+    image: "https://i.imgur.com/rXCZxF7.jpeg",
+    description:
+      "An app for people with speech disabilities, providing an improvement dashboard, self-improvement gaming modules, and streamlined documentation. It enables doctors, student therapists, and receptionists to manage patient accounts and records, enhancing patient care and progress tracking.",
+    technologies: ["React Native", "MongoDB", "NodeJs"],
+    github: "https://github.com/Sandhish/Vocal-Vista",
+    demo: "https://github.com/Sandhish/Vocal-Vista"
+  },
+  {
     title: "Weather API",
     image: "https://i.imgur.com/zeQwVHC.png",
     description:
@@ -36,7 +45,7 @@ export const PROJECTS = [
     image: "https://i.imgur.com/PARfDKc.jpeg",
     description:
       "Developed a real-time TCP group chat application using HTML, CSS, JavaScript, and Socket.IO. Supports multi-user chat with live updates in a shared room. Demonstrates client-server communication and efficient data transfer in real time.",
-    technologies: ["SocketIo", "TCP-Socket", "HTML", "CSS","JS"],
+    technologies: ["SocketIo", "TCP-Socket", "HTML", "CSS", "JS"],
     github: "https://github.com/Sandhish/TCP_Group_Chat",
     demo: "https://tcp-group-chat-qof6.onrender.com/"
   },
@@ -46,17 +55,17 @@ export const PROJECTS = [
     description:
       "Developed an automatic railway gate system leveraging pressure plates instead of traditional sensors. This innovative approach detects the weight of approaching trains to control gate operations, enhancing safety and reliability. The system is designed to provide timely and accurate gate closures, preventing accidents and ensuring smooth railway crossings. This hardware solution emphasizes cost-effectiveness and ease of maintenance.",
     technologies: [],
-    github:"https://drive.google.com/file/d/1Eb1jmC1_Fa51BZIXcoyEz0z_KhFFhPae/view?usp=drive_link",
-    demo:"https://drive.google.com/file/d/1Eb1jmC1_Fa51BZIXcoyEz0z_KhFFhPae/view?usp=drive_link",
+    github: "https://drive.google.com/file/d/1Eb1jmC1_Fa51BZIXcoyEz0z_KhFFhPae/view?usp=drive_link",
+    demo: "https://drive.google.com/file/d/1Eb1jmC1_Fa51BZIXcoyEz0z_KhFFhPae/view?usp=drive_link",
   },
   {
     title: "Page Replacement Algorithms",
     image: "https://i.imgur.com/UqvihDQ.png",
     description:
       "Developed an interactive web tool using HTML, CSS, and JavaScript to demonstrate FIFO, LRU, and Optimal replacement algorithms. This project visualizes and compares algorithm performance, enhancing understanding through real-time simulations and interactive learning.",
-    technologies: ["HTML","CSS","JS"],
-    github:"https://github.com/Sandhish/Page-Replacement-Algorithms",
-    demo:"https://page-replacement-algorithms-3.vercel.app/",
+    technologies: ["HTML", "CSS", "JS"],
+    github: "https://github.com/Sandhish/Page-Replacement-Algorithms",
+    demo: "https://page-replacement-algorithms-3.vercel.app/",
   },
 ];
 

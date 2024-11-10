@@ -23,6 +23,7 @@ function App() {
           <Education />
           <Skills />
           <Projects />
+          {/* <Certifications /> */}
           <Achievements />
           <Footer />
         </div>
