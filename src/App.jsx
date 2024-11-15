@@ -1,5 +1,6 @@
 import About from "./Components/About/about"
 import Achievements from "./Components/Achievements/achievements"
+import Certifications from "./Components/Certifications/Certifications"
 import Education from "./Components/Education/education"
 import Footer from "./Components/Footer/footer"
 import Hero from "./Components/Hero/hero"
@@ -23,7 +24,7 @@ function App() {
           <Education />
           <Skills />
           <Projects />
-          {/* <Certifications /> */}
+          <Certifications />
           <Achievements />
           <Footer />
         </div>
