@@ -59,7 +59,7 @@ const Hero = () => {
               </AnimatePresence>
             </motion.div>
 
-            <motion.a href="https://drive.google.com/file/d/19NplZ9O4kq6pmqkL3VdgVJHcHTzbZj25/view?usp=drive_link" download="Sandhish_Resume.pdf"
+            <motion.a href="https://drive.google.com/file/d/12tVmtdBqix1Kaaoa8MiizGgmqdZX-rbH/view?usp=sharing" download="Sandhish_Resume.pdf"
               variants={container(1.5)} initial="hidden" animate="visible" whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               className="mt-2 lg:ml-4 flex gap-2 bg-zinc-950 rounded-3xl text-lg px-5 py-1.5 text-center me-2 mb-2 border border-white text-gray-300">
               Resume
