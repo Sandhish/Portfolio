@@ -50,6 +50,15 @@ export const PROJECTS = [
     demo: "https://tcp-group-chat-qof6.onrender.com/"
   },
   {
+    title: "QRLite",
+    image: "https://i.imgur.com/YIgwvuv.png",
+    description:
+      "Developed a QR code generator application using ReactJS, enabling users to input text or URLs and generate QR codes in real time. Integrated a QR API for image creation and implemented a download feature for saving QR codes.",
+    technologies: ["ReactJS","CSS"],
+    github: "https://github.com/Sandhish/QrCode-Generator",
+    demo: "https://qrlite.vercel.app/"
+  },
+  {
     title: "Automatic Railway Gates",
     image: "https://imgur.com/cDROavp.png",
     description:

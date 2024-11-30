@@ -56,10 +56,10 @@ const Navbar = () => {
               <Link to="projects" smooth={true} duration={1050}>Projects</Link>
             </motion.div>
             <motion.div whileHover={textHover} onClick={() => setIsOpen(false)}>
-              <Link to="certifications" smooth={true} duration={1050}>Certifications</Link>
+              <Link to="certifications" smooth={true} duration={1100}>Certifications</Link>
             </motion.div>
             <motion.div whileHover={textHover} onClick={() => setIsOpen(false)}>
-              <Link to="achievements" smooth={true} duration={1100}>Achievements</Link>
+              <Link to="achievements" smooth={true} duration={1150}>Achievements</Link>
             </motion.div>
           </motion.div>
         )}
@@ -78,10 +78,10 @@ const Navbar = () => {
           <Link to="projects" smooth={true} duration={1050}>Projects</Link>
         </motion.div>
         <motion.div whileHover={textHover}>
-          <Link to="certifications" smooth={true} duration={1050}>Certifications</Link>
+          <Link to="certifications" smooth={true} duration={1100}>Certifications</Link>
         </motion.div>
         <motion.div whileHover={textHover}>
-          <Link to="achievements" smooth={true} duration={1100}>Achievements</Link>
+          <Link to="achievements" smooth={true} duration={1150}>Achievements</Link>
         </motion.div>
       </div>
     </div>
