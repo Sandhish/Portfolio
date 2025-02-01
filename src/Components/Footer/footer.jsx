@@ -103,7 +103,8 @@ const Footer = () => {
             </motion.div>
 
             <div className="text-center lg:text-sm text-xs text-gray-500 pt-4">
-                Copyright &copy; 2024 | All rights reserved | 💙 by Sandhish
+                Copyright &copy; 2024 | All rights reserved | {" "}
+                <motion.span whileHover={iconHover} className="inline-block">💙</motion.span> by Sandhish
             </div>
 
             <Toaster position="top-center" reverseOrder={false} />

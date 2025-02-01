@@ -14,6 +14,12 @@ const Certifications = () => {
         },
         {
             id: 2,
+            img: 'mongodb.jpg',
+            title: 'MongoDB Associate Developer',
+            desc: '-- MongoDB University',
+        },
+        {
+            id: 3,
             img: 'excel.png',
             title: 'Excel Skills Job Simulation',
             desc: '-- JP Morgan',

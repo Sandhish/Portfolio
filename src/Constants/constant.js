@@ -5,15 +5,6 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const PROJECTS = [
   {
-    title: "Language Translator",
-    image: "https://images.squarespace-cdn.com/content/v1/57cf3ccf725e25c4fe5db6dd/1475597073822-XX0MX4T6HHDMRCR5WHPP/orange-translate-button.jpg",
-    description:
-      "Designed and developed a Language Translator using Hugging Face models, enabling the identification and translation of text between multiple languages. This tool leverages advanced machine learning algorithms to accurately detect the source language. It provides seamless translations to a user-specified target language.",
-    technologies: ["Hugging Face", "Transformers", "Gradio", "NLP"],
-    github: "https://github.com/Sandhish/Language_Translator",
-    demo: "https://www.linkedin.com/posts/sandhish-j-74359b256_nlp-languagetranslation-huggingface-activity-7193895342533152768-CBqh?utm_source=share&utm_medium=member_desktop"
-  },
-  {
     title: "Kural Agaram",
     image: "https://i.imgur.com/uBPG51W.jpg",
     description:
@@ -23,6 +14,33 @@ export const PROJECTS = [
     demo: "https://kural-agaram.netlify.app/"
   },
   {
+    title: "Weather App",
+    image: "https://i.imgur.com/zeQwVHC.png",
+    description:
+      "Developed a weather app providing location-based forecasts without requiring login. Users can optionally log in through Firebase to save favorite locations and receive alerts. Alerts are sent directly via email, managed by Nodemailer. This project showcases seamless integration of user authentication, email notifications, and real-time weather data.",
+    technologies: ["ReactJs", "FireBase", "NodeJs", "WeatherAPI"],
+    github: "https://github.com/Sandhish/Weather-API",
+    demo: "https://breezecheck.vercel.app/"
+  },
+  {
+    title: "Crypto Wiz",
+    image: "https://i.imgur.com/7wqBaKF.png",
+    description:
+      "Crypto-Wiz is a real-time cryptocurrency tracking and trading app. It provides live price updates, portfolio management, and watchlists using Livecoin Watch and Binance APIs. Users can trade with virtual funds, track holdings, and get real-time market data via WebSockets. Built with MERN Stack, it features JWT auth and interactive charts with Chart.js.",
+    technologies: ["MERN Stack", "Web Socket", "Binance API", "Livecoin Watch API"],
+    github: "https://github.com/Sandhish/Crypto-Wiz",
+    demo: "https://cryptowizz.vercel.app/"
+  },
+  {
+    title: "Language Translator",
+    image: "https://images.squarespace-cdn.com/content/v1/57cf3ccf725e25c4fe5db6dd/1475597073822-XX0MX4T6HHDMRCR5WHPP/orange-translate-button.jpg",
+    description:
+      "Designed and developed a Language Translator using Hugging Face models, enabling the identification and translation of text between multiple languages. This tool leverages advanced machine learning algorithms to accurately detect the source language. It provides seamless translations to a user-specified target language.",
+    technologies: ["Hugging Face", "Transformers", "Gradio", "NLP"],
+    github: "https://github.com/Sandhish/Language_Translator",
+    demo: "https://www.linkedin.com/posts/sandhish-j-74359b256_nlp-languagetranslation-huggingface-activity-7193895342533152768-CBqh?utm_source=share&utm_medium=member_desktop"
+  },
+  {
     title: "Vocal Vista",
     image: "https://i.imgur.com/rXCZxF7.jpeg",
     description:
@@ -30,15 +48,6 @@ export const PROJECTS = [
     technologies: ["React Native", "MongoDB", "NodeJs"],
     github: "https://github.com/Sandhish/Vocal-Vista",
     demo: "https://github.com/Sandhish/Vocal-Vista"
-  },
-  {
-    title: "Weather API",
-    image: "https://i.imgur.com/zeQwVHC.png",
-    description:
-      "Developed a weather app providing location-based forecasts without requiring login. Users can optionally log in through Firebase to save favorite locations and receive alerts. Alerts are sent directly via email, managed by Nodemailer. This project showcases seamless integration of user authentication, email notifications, and real-time weather data.",
-    technologies: ["ReactJs", "FireBase", "NodeJs", "WeatherAPI"],
-    github: "https://github.com/Sandhish/Weather-API",
-    demo: "https://breezecheck.vercel.app/"
   },
   {
     title: "TCP Group Chat",

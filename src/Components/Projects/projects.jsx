@@ -23,7 +23,7 @@ const Projects = () => {
               <p className='mb-4 text-neutral-400 flex justify-center lg:ml-4'>{project.description}</p>
               <div className='flex justify-center lg:justify-start flex-wrap lg:ml-4'>
                 {project.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className='mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700'>
+                  <span key={techIndex} className='mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700 hover:-translate-y-0.5 transform transition duration-300 ease-in-out'>
                     {tech}
                   </span>
                 ))}
