@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div id='about' className='border-b border-neutral-900 pb-6'>
       <motion.h1 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1.0 }} className='my-12 text-center text-4xl'>
-        About
+        About 
         <span className='text-neutral-500'> Me</span>
       </motion.h1>
 
